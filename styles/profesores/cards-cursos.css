@@ -1,0 +1,67 @@
+.btn-finalizar {
+  background-color: lightgreen;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all .1s;
+  cursor: pointer;
+}
+
+.btn-finalizar:hover {
+  background-color: rgb(112, 214, 112);
+}
+
+.card-activos {
+  position: relative;
+  height: auto;
+}
+
+.wasa {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: lightgreen;
+  color: black;
+}
+
+.wasa:hover {
+  background-color: rgb(92, 202, 92);
+}
+
+@media (max-width: 500px) {
+  .card-activos {
+    flex-direction: column;
+    justify-content: start;
+    height: 330px;
+    padding: 30px;
+    gap: 30px;
+  }
+  .card-info {
+    flex-direction: row;
+  }
+
+  .wasa {
+    bottom: 20px;
+    right: 30px;
+    padding: 5px 10px;
+  }
+  .btn-finalizar {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: auto;
+    padding: 5px 10px;
+  }
+}

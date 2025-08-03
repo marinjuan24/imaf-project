@@ -1,0 +1,322 @@
+@import url(../styles/globals.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/recursos/hojas-arriba.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 90%;
+}
+
+/* Los estilos del header se cargan desde header.css */
+/* Los estilos del sidebar se cargan desde sidebar.css */
+
+section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.box-contenido {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 20px;
+  box-sizing: border-box;
+}
+
+.selection-box-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.card-box {
+  width: 320px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid var(--color-gray-borders);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.card-box img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-box span {
+  height: 20%;
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--background-color);
+  background: var(--color-wine);
+}
+
+.card-box:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.8s ease;
+  box-shadow: 0 0 10px var(--color-wine);
+}
+
+.modal-cursos {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.closed-modal {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-wine);
+}
+
+.closed-modal:hover {
+  fill: var(--color-pink-hover);
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.form-crear-curso {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title h2 {
+  font-size: 2rem;
+  color: var(--color-wine);
+}
+
+.form-group {
+  width: 300px;
+  height: auto;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  color: var(--color-wine);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--color-gray-borders);
+  border-radius: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: var(--color-gray-text);
+}
+
+.form-group select {
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline-color: var(--color-wine);
+}
+
+.form-group input[type="file"] {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border: 2px solid var(--color-gray-borders);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="file"]::file-selector-button {
+  background: var(--color-wine);
+  color: var(--background-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.form-group input[type="file"]::file-selector-button:hover {
+  background: var(--color-pink-hover);
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.btn-modal {
+  width: 50%;
+  height: 50px;
+  background: var(--color-wine);
+  color: var(--background-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-modal:hover {
+  background: var(--color-pink-hover);
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.modal-profesor {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-profesor .form-crear-profesor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-profesor .form-crear-profesor .form-group {
+  width: 300px;
+  height: auto;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.modal-profesor .form-crear-profesor .form-group label {
+  font-size: 1.2rem;
+  color: var(--color-wine);
+}
+
+.modal-profesor .form-crear-profesor .form-group input,
+.modal-profesor .form-crear-profesor .form-group select {
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--color-gray-borders);
+  border-radius: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: var(--color-gray-text);
+}
+
+.modal-none {
+  display: none;
+}
+
+/* Media Querys */
+
+@media (max-width: 478px) {
+  .box-contenido {
+    height: 500px;
+  }
+  .selection-box-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .modal-cursos,
+  .modal-profesor {
+    position: absolute;
+    top: -40px;
+    left: -20px;    
+    width: 100vw;
+    height: auto;
+    padding-bottom: 150px;
+    background-color: #fff;
+    gap: 50px;
+  }
+
+  .form-group {
+    align-items: start !important;
+    gap: 10px;
+  }
+
+  .form-group label {
+    margin-left: 12px;
+  }
+
+  .btn-modal {
+    width: 80%;
+  }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-pink-buttons: #bf005a;
+    --color-wine: #80003c;
+    --color-gray-titles: #4d4d4d;
+    --color-pink-hover: #ff0078;
+    --color-light-pink-shadow: #ffc4e1;
+    --color-background-input-search: #ffdeef;
+    --color-green: #48cd80;
+    --color-gray-borders: #a6a3a4;
+    --background-color: #fbfbfb;
+    --color-red-error: #d40e0e;
+
+    --font-size: 62.5%;
+    --font-h1: 2rem;
+    --font-button: 1.6rem;
+    --font-links: 1.2rem;
+    --font-mini: 0.8rem;
+
+    /* Medidas */
+    --width: 30%;
+    --height: 70%;
+    --border-login: 3px solid #cbcbcb;
+    --border-radius-login: 24px;
+
+    /* Font Family */
+    --font-family: 'Montserrat', sans-serif;
+    
+
+    
+}
+
+.icon {
+    width: 1.575rem;
+    height: 1.575rem;
+}
+.tabler-icon{
+    height: 20px;
+    transform: translateY(-20%);
+    }
+body{
+    font-weight: 600;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+/* 
+box shadow */
+
+/* box-shadow: 12px 14px 12px -2px rgba(203,203,203,0.7);
+-webkit-box-shadow: 12px 14px 12px -2px rgba(203,203,203,0.7);
+-moz-box-shadow: 12px 14px 12px -2px rgba(203,203,203,0.7); */
